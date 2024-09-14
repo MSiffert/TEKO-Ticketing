@@ -1,14 +1,14 @@
 package service
 
 import (
-	"example-rest-api/app/constant"
-	"example-rest-api/app/domain/dao"
-	"example-rest-api/app/pkg"
-	"example-rest-api/app/repository"
 	"github.com/gin-gonic/gin"
 	log "github.com/sirupsen/logrus"
 	"net/http"
 	"strconv"
+	"ticketing-api/app/constant"
+	"ticketing-api/app/domain/dao"
+	"ticketing-api/app/pkg"
+	"ticketing-api/app/repository"
 )
 
 type TicketMsgService interface {

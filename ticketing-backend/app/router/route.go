@@ -1,9 +1,9 @@
 package router
 
 import (
-	"example-rest-api/config"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
+	"ticketing-api/config"
 )
 
 func Init(init *config.Initialization) *gin.Engine {

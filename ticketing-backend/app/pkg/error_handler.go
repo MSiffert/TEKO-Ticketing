@@ -2,11 +2,11 @@ package pkg
 
 import (
 	"errors"
-	"example-rest-api/app/constant"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"strings"
+	"ticketing-api/app/constant"
 )
 
 func PanicException_(key string, message string) {

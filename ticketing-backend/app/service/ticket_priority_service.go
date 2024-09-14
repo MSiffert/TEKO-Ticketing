@@ -1,11 +1,11 @@
 package service
 
 import (
-	"example-rest-api/app/constant"
-	"example-rest-api/app/domain/dao"
-	"example-rest-api/app/pkg"
 	"github.com/gin-gonic/gin"
 	"net/http"
+	"ticketing-api/app/constant"
+	"ticketing-api/app/domain/dao"
+	"ticketing-api/app/pkg"
 )
 
 type TicketPriorityService interface {

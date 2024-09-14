@@ -1,6 +1,6 @@
 services:
   db:
-      container_name: example-db
+      container_name: ticketing-db
       image: postgres:16.4
       restart: always
       ports:

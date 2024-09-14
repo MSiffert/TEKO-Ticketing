@@ -1,4 +1,4 @@
-module example-rest-api
+module ticketing-api
 
 go 1.22.2
 

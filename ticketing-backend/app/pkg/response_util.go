@@ -1,8 +1,8 @@
 package pkg
 
 import (
-	"example-rest-api/app/constant"
-	"example-rest-api/app/domain/dto"
+	"ticketing-api/app/constant"
+	"ticketing-api/app/domain/dto"
 )
 
 func Null() interface{} {

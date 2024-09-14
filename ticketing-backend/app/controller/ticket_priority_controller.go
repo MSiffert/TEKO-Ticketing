@@ -1,8 +1,8 @@
 package controller
 
 import (
-	"example-rest-api/app/service"
 	"github.com/gin-gonic/gin"
+	"ticketing-api/app/service"
 )
 
 type TicketPriorityController interface {

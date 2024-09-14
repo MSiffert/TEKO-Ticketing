@@ -1,9 +1,9 @@
 package repository
 
 import (
-	"example-rest-api/app/domain/dao"
 	log "github.com/sirupsen/logrus"
 	"gorm.io/gorm"
+	"ticketing-api/app/domain/dao"
 )
 
 type UserRepository interface {

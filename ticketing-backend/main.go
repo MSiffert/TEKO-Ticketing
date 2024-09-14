@@ -1,10 +1,10 @@
 package main
 
 import (
-	"example-rest-api/app/router"
-	"example-rest-api/config"
 	"log"
 	"os"
+	"ticketing-api/app/router"
+	"ticketing-api/config"
 
 	"github.com/joho/godotenv"
 )

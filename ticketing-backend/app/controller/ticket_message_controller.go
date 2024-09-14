@@ -1,10 +1,9 @@
 package controller
 
 import (
-	"example-rest-api/app/service"
 	"github.com/gin-gonic/gin"
+	"ticketing-api/app/service"
 )
-
 
 type TicketMessageController interface {
 	CreateTicketMessage(c *gin.Context)
@@ -22,7 +21,6 @@ func (u TicketMessageControllerImpl) CreateTicketMessage(c *gin.Context) {
 func (u TicketMessageControllerImpl) DeleteTicketMessage(c *gin.Context) {
 	u.svc.DeleteTicketMessage(c)
 }
-
 
 func TicketMessageControllerInit(userService service.TicketMsgService) *TicketMessageControllerImpl {
 	return &TicketMessageControllerImpl{

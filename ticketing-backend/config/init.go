@@ -1,10 +1,10 @@
 package config
 
 import (
-	"example-rest-api/app/controller"
-	"example-rest-api/app/repository"
-	"example-rest-api/app/service"
 	"log"
+	"ticketing-api/app/controller"
+	"ticketing-api/app/repository"
+	"ticketing-api/app/service"
 )
 
 type Initialization struct {
