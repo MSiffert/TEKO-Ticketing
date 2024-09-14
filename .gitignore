@@ -61,8 +61,6 @@ Thumbs.db
 # Go specific
 vendor/
 *.test
-*.mod
-*.sum
 
 # Go workspace file
 go.work

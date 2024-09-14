@@ -10,7 +10,7 @@ services:
       volumes:
         - ./db-data:/var/lib/postgresql/data
       env_file:
-        - .env
+        - ./ticketing-backend/.env
       healthcheck:
         test: ["CMD-SHELL", "sh -c 'pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}'"]
         interval: 5s
@@ -29,7 +29,7 @@ services:
         db:
           condition: service_healthy
       env_file:
-        - .env
+        - ./ticketing-backend/.env
   ui:
       container_name: ticketing-ui
       build:
@@ -42,7 +42,5 @@ services:
       depends_on:
         db:
           condition: service_healthy
-      env_file:
-        - .env
 networks:
   ticketing:
