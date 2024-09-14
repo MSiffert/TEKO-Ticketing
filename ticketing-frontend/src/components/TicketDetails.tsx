@@ -124,7 +124,10 @@ const TicketDetails: React.FC = () => {
                             Description: {ticket.description}
                         </Typography>
                         <Typography variant="body2" color="textSecondary">
-                            Status: {ticket.status}
+                            Status: {statusOptions.filter(e => e.value === ticket.status)[0].label}
+                        </Typography>
+                        <Typography variant="body2" color="textSecondary">
+                            Priority: {priorityOptions.filter(e => e.value === ticket.priority)[0].label}
                         </Typography>
                     </Paper>
 

@@ -6,7 +6,7 @@ services:
       ports:
         - "5432:5432"
       networks:
-        - example
+        - ticketing
       volumes:
         - ./db-data:/var/lib/postgresql/data
       env_file:
@@ -17,18 +17,32 @@ services:
         timeout: 5s
         retries: 5
   api:
-      container_name: example-api
+      container_name: ticketing-api
       build:
-        context: .
+        context: ./ticketing-backend
         dockerfile: Dockerfile
       ports:
         - 8080:8080
       networks:
-        - example
+        - ticketing
+      depends_on:
+        db:
+          condition: service_healthy
+      env_file:
+        - .env
+  ui:
+      container_name: ticketing-ui
+      build:
+        context: ./ticketing-frontend
+        dockerfile: Dockerfile
+      ports:
+        - 80:80
+      networks:
+        - ticketing
       depends_on:
         db:
           condition: service_healthy
       env_file:
         - .env
 networks:
-  example:
+  ticketing:

@@ -13,4 +13,3 @@ FROM alpine AS production
 COPY --from=builder /app .
 
 CMD ["./main"]
-
